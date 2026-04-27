@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ESSIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SnackListView()
+                .modelContainer(for: Snack.self)  //  sets up the 'container' or database structure - it will hold Snack types
         }
+    }
+    
+    //  print out the application path where simulator data can be found - if browsing with DB Browser
+    init(){
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }

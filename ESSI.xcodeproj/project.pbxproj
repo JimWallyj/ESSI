@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A72F40882F99C740008C8101 /* ESSIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F40872F99C740008C8101 /* ESSIApp.swift */; };
-		A72F408A2F99C740008C8101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F40892F99C740008C8101 /* ContentView.swift */; };
+		A72F408A2F99C740008C8101 /* SnackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F40892F99C740008C8101 /* SnackListView.swift */; };
 		A72F408C2F99C743008C8101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72F408B2F99C743008C8101 /* Assets.xcassets */; };
 		A72F408F2F99C743008C8101 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72F408E2F99C743008C8101 /* Preview Assets.xcassets */; };
+		A72F40972F99CBA4008C8101 /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F40962F99CBA4008C8101 /* Snack.swift */; };
+		A72F40992F9B1EC5008C8101 /* SnackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F40982F9B1EC5008C8101 /* SnackDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A72F40842F99C740008C8101 /* ESSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72F40872F99C740008C8101 /* ESSIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESSIApp.swift; sourceTree = "<group>"; };
-		A72F40892F99C740008C8101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A72F40892F99C740008C8101 /* SnackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackListView.swift; sourceTree = "<group>"; };
 		A72F408B2F99C743008C8101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72F408E2F99C743008C8101 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A72F40952F99CA92008C8101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A72F40962F99CBA4008C8101 /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
+		A72F40982F9B1EC5008C8101 /* SnackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		A72F40862F99C740008C8101 /* ESSI */ = {
 			isa = PBXGroup;
 			children = (
+				A72F40952F99CA92008C8101 /* Info.plist */,
 				A72F40872F99C740008C8101 /* ESSIApp.swift */,
-				A72F40892F99C740008C8101 /* ContentView.swift */,
+				A72F40962F99CBA4008C8101 /* Snack.swift */,
+				A72F40892F99C740008C8101 /* SnackListView.swift */,
+				A72F40982F9B1EC5008C8101 /* SnackDetailView.swift */,
 				A72F408B2F99C743008C8101 /* Assets.xcassets */,
 				A72F408D2F99C743008C8101 /* Preview Content */,
 			);
@@ -137,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72F408A2F99C740008C8101 /* ContentView.swift in Sources */,
+				A72F40972F99CBA4008C8101 /* Snack.swift in Sources */,
+				A72F408A2F99C740008C8101 /* SnackListView.swift in Sources */,
+				A72F40992F9B1EC5008C8101 /* SnackDetailView.swift in Sources */,
 				A72F40882F99C740008C8101 /* ESSIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +285,9 @@
 				DEVELOPMENT_TEAM = QRX7D8367M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESSI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +314,9 @@
 				DEVELOPMENT_TEAM = QRX7D8367M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESSI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
